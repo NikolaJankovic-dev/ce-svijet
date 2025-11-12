@@ -1,0 +1,107 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "connect-game-registry",
+  "homepage": "http://localhost:5174",
+  "items": [
+    {
+      "name": "connect-game",
+      "type": "registry:block",
+      "title": "Connect Game",
+      "description": "Mini igra zasnovana na React + react-konva, sa prilagođenim hookovima i assetima.",
+      "dependencies": [
+        "react",
+        "react-dom",
+        "react-konva",
+        "konva",
+        "use-image"
+      ],
+      "files": [
+        {
+          "path": "src/connect/components/connect-cell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/connect/components/connect-game.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/connect/components/connect-grid.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/connect/components/connect-time.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/connect/components/connect-wrapper.tsx",
+          "type": "registry:component"
+        },
+        { "path": "src/connect/index.ts", "type": "registry:component" },
+
+        {
+          "path": "src/connect/hooks/useGameLogic.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "src/connect/hooks/useLevelConfig.ts",
+          "type": "registry:hook"
+        },
+
+        { "path": "src/connect/lib/default.ts", "type": "registry:lib" },
+        { "path": "src/connect/lib/types.ts", "type": "registry:lib" },
+
+        {
+          "path": "src/connect/connect/assets/ui/game-bg.png",
+          "type": "registry:file",
+          "target": "src/assets/ui/game-bg.png"
+        },
+        {
+          "path": "src/connect/connect/assets/ui/ram.png",
+          "type": "registry:file",
+          "target": "src/assets/ui/ram.png"
+        },
+        {
+          "path": "src/connect/connect/assets/ui/plocica.png",
+          "type": "registry:file",
+          "target": "src/assets/ui/plocica.png"
+        },
+
+        {
+          "path": "src/connect/connect/assets/sachete/19_Ananas&Mango_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Ananas&Mango_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Bazga&Limun_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Bazga&Limun_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Grejp_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Grejp_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Limeta_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Limeta_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Limun_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Limun_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Limunska Trava_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Limunska Trava_CRO_SLO_BiH.png"
+        },
+        {
+          "path": "src/connect/connect/assets/sachete/19_Naranca_CRO_SLO_BiH.png",
+          "type": "registry:file",
+          "target": "src/assets/sachete/19_Naranca_CRO_SLO_BiH.png"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { ConnectGame } from "./connect/ui/connect-game";
+import { ConnectGame } from "./connect/components/connect-game";
 
 
 
