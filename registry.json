@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "connect-game-registry",
-  "homepage": "http://localhost:5174",
+  "name": "4bees-games-registry",
+  "homepage": "https://4bees-games.netlify.app",
   "items": [
     {
       "name": "connect-game",
@@ -100,6 +100,47 @@
           "path": "src/connect/connect/assets/sachete/19_Naranca_CRO_SLO_BiH.png",
           "type": "registry:file",
           "target": "src/assets/sachete/19_Naranca_CRO_SLO_BiH.png"
+        }
+      ]
+    },
+    {
+      "name": "falling-game",
+      "type": "registry:block",
+      "title": "Falling Game",
+      "description": "Mini igra zasnovana na React, sa prilagođenim hookovima i assetima. Igra se na osnovu padajućih boca.",
+      "dependencies": ["react", "react-dom"],
+      "files": [
+        {
+          "path": "src/falling-sachets/components/falling-sachet.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/falling-sachets/components/falling-game.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/falling-sachets/components/falling-types.ts",
+          "type": "registry:lib"
+        },
+        {
+          "path": "src/falling-sachets/assets/ui/falling-background.png",
+          "type": "registry:file",
+          "target": "src/assets/ui/falling-background.png"
+        },
+        {
+          "path": "src/falling-sachets/assets/bottles/cockta_blondie.png",
+          "type": "registry:file",
+          "target": "src/assets/bottles/cockta_blondie.png"
+        },
+        {
+          "path": "src/falling-sachets/assets/bottles/cockta_free.png",
+          "type": "registry:file",
+          "target": "src/assets/bottles/cockta_free.png"
+        },
+        {
+          "path": "src/falling-sachets/assets/bottles/cockta_original.png",
+          "type": "registry:file",
+          "target": "src/assets/bottles/cockta_original.png"
         }
       ]
     }
