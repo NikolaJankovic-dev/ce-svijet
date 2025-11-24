@@ -143,8 +143,26 @@ export const ConnectGrid: React.FC<ConnectGridProps> = ({
         width={boardSize}
         height={boardSize}
         onMouseUp={handleDragEnd}
+        onTouchEnd={handleDragEnd}
         onMouseMove={(e) => {
           if (gameState.activePaths.some((p) => p.isDragging)) {
+            const pos = e.target.getStage()?.getPointerPosition();
+            if (!pos) return;
+
+            const x = pos.x - boardSize / 7.54 / 2;
+            const y = pos.y - boardSize / 7.54 / 2;
+            const col = Math.floor(x / cellSize);
+            const row = Math.floor(y / cellSize);
+            const index = row * gridSize + col;
+
+            if (index >= 0 && index < gridSize * gridSize) {
+              handleCellHover(index);
+            }
+          }
+        }}
+        onTouchMove={(e) => {
+          if (gameState.activePaths.some((p) => p.isDragging)) {
+            e.evt.preventDefault();
             const pos = e.target.getStage()?.getPointerPosition();
             if (!pos) return;
 
